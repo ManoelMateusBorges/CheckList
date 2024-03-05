@@ -2,4 +2,9 @@
     <app-tarefa></app-tarefa>
     <app-tarefa></app-tarefa>
     <app-tarefa></app-tarefa>
+    <div></div>
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+        <input type="text" formControlName="tarefa" id="tarefa">
+        <button type="submit" >Enviar</button>
+    </form>
 </div>
